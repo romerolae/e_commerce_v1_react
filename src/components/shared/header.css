@@ -24,12 +24,12 @@
 	padding-top: 80px;
 	box-shadow: 0 0 20px 0 #0009;
 	transition: transform 400ms ease;
-	transform: translateX(105%);
+	transform: translateX(0%);
 }
 
 .header__nav-open {
 	transition: transform 600ms ease;
-	transform: translateX(0%);
+	transform: translateX(105%);
 	z-index: 9999999;
 }
 

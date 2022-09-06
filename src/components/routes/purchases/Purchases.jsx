@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import getConfig from '../../utils/getConfig';
+import getConfig from '../../../utils/getConfig';
 
 const Purchases = () => {
 	const [purchases, setPurchases] = useState();

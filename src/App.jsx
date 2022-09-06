@@ -1,14 +1,33 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/routes/home/Home';
-import ProductDetail from './components/routes/ProductDetail';
-import Purchases from './components/routes/Purchases';
+import ProductDetail from './components/routes/productdetail/ProductDetail';
+import Purchases from './components/routes/purchases/Purchases';
 import Login from './components/routes/login/Login';
 import Header from './components/shared/Header';
 import ProtectedRoutes from './components/routes/ProtectedRoutes';
-import Cart from './components/routes/Cart';
+
+import Cart from './components/routes/cart/Cart';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 function App() {
+	// useEffect(() => {
+	// 	const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/users';
+	// 	const obj = {
+	// 		firstName: 'Luis',
+	// 		lastName: 'Romero',
+	// 		email: 'go.romerolae@gmail.com',
+	// 		password: '651205070',
+	// 		phone: '3193822294',
+	// 		role: 'admin',
+	// 	};
+	// 	axios
+	// 		.post(URL, obj)
+	// 		.then((res) => console.log(res.data))
+	// 		.catch((err) => console.log(err));
+	// }, []);
+
 	return (
 		<div className="App">
 			<Header />

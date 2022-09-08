@@ -1,0 +1,10 @@
+.loading-container {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.loading-title {
+	color: var(--secundary-color);
+}

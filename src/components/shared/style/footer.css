@@ -1,0 +1,9 @@
+.App {
+	position: relative;
+}
+.footer {
+	background-color: #007bbf;
+	height: 200px;
+	position: fixed;
+	bottom: 0%;
+}

@@ -11,26 +11,30 @@ const ProductDescription = ({ productInfo }) => {
 	};
 
 	return (
-		<section className="product-info">
-			<h2 className="product-info__name">{productInfo?.title}</h2>
-			<p className="product-info__description">{productInfo?.description}</p>
-			<div className="product-info_body">
-				<article className="product-info__price">
-					<h3 className="product-info__price-label">Price</h3>
-					<span className="product-info__price-value">
-						{productInfo?.price}
-					</span>
-				</article>
-				<article className="product-info__quantity">
-					<h3 className="product-info__quantity__label">Quantity</h3>
-					<div className="product-info__quantity__product">
-						<button onClick={handleMinus}>-</button>
+		<div className="prduct">
+			<section className="product-info">
+				<h2 className="product-info__title">{productInfo?.title}</h2>
+				<p className="product-info__description">{productInfo?.description}</p>
+				<div className="card-product__price-container">
+					<h3 className="card-product__price label ">Price</h3>
+					<p className="card-product__price-number">{productInfo?.price}</p>
+					<h3 className="card__product__info-quantity">Quantity</h3>
+					<div className="product-info__quantity__container">
+						<div onClick={handleMinus} className="product-info__minus">
+							-
+						</div>
 						<div>{counter}</div>
-						<button onClick={handlePlus}>+</button>
+						<div onClick={handlePlus} className="product-info__plus">
+							+
+						</div>
 					</div>
-				</article>
-			</div>
-		</section>
+				</div>
+				<buttom className="product-card__btn">
+					Add to Cart
+					<i className="fa-solid fa-cart-plus"></i>
+				</buttom>
+			</section>
+		</div>
 	);
 };
 

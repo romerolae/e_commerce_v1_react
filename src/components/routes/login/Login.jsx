@@ -14,7 +14,11 @@ const Login = () => {
 		setToken(changedToken);
 	}, [changedToken]);
 
-	return <div className="login">{token ? <LoggedUser /> : <LoginForm />}</div>;
+	return (
+		<div className="login">
+			{token ? <LoggedUser setToken={setToken} token={token} /> : <LoginForm />}
+		</div>
+	);
 };
 
 export default Login;

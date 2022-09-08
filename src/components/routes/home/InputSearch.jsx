@@ -11,7 +11,11 @@ const InputSearch = () => {
 	return (
 		<div>
 			<form onSubmit={handleSubmit(submit)} className="form-home">
-				<input type="text" {...register('searchText')} />
+				<input
+					type="text"
+					placeholder=" Find your product"
+					{...register('searchText')}
+				/>
 				<button>Search</button>
 			</form>
 		</div>

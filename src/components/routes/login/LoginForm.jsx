@@ -11,7 +11,6 @@ const LoginForm = () => {
 	const navigate = useNavigate();
 
 	const submit = (data) => {
-		console.log(data);
 		const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/users/login';
 		axios
 			.post(URL, data)

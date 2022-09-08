@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import ProductDescription from './ProductDescription';
+import './style/productdetail.css';
+import ProductSlider from './ProductSlider';
+import SimilarProducts from './SimilarProducts';
+
 const ProductDetail = () => {
 	const [productInfo, setProductInfo] = useState();
 
@@ -17,7 +21,9 @@ const ProductDetail = () => {
 
 	return (
 		<div>
+			<ProductSlider productInfo={productInfo} />
 			<ProductDescription productInfo={productInfo} />
+			<SimilarProducts productInfo={productInfo} />
 		</div>
 	);
 };

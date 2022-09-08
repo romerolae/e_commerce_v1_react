@@ -6,6 +6,28 @@
 	gap: 20px;
 }
 
+.form-home {
+	background-color: #545454;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	gap: 5px;
+}
+
+.form-home input {
+	border-radius: 5px;
+	width: 15%;
+	height: 30px;
+	border: none;
+}
+
+.form-home button {
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	width: 7%;
+}
+
 .card-product {
 	width: min(100%, 300px);
 	border-radius: 10px;

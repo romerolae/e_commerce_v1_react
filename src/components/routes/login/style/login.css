@@ -34,3 +34,19 @@
 .login__item {
 	margin-bottom: 10px;
 }
+
+/* ======User login Card */
+
+.form-logout {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.form-logout__icon {
+	font-size: 4rem;
+	color: var(--secundary-color);
+}

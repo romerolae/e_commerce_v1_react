@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import './header.css';
+import './style/header.css';
 
 const Header = () => {
 	const navBar = useRef();
@@ -12,10 +12,13 @@ const Header = () => {
 	return (
 		<header className="header">
 			<NavLink to="/">
-				<h1 className="header__logo"> E-commerce</h1>
+				<div className="header__logo">
+					<h1 className="header__logo__title">TechManiaShop</h1>
+					<i class="fa-sharp fa-solid fa-microchip"></i>
+				</div>
 			</NavLink>
 			<div onClick={clickMenuHam} className="header__menuham">
-				<i className="fa-sharp fa-solid fa-bars"></i>
+				<i className=" fa-sharp fa-solid fa-bars"></i>
 			</div>
 
 			<nav ref={navBar} className="header__nav">

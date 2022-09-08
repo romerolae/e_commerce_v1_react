@@ -3,15 +3,27 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: #007bbf;
 }
 .header__logo {
+	color: var(--secundary-color);
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.header__logo i {
+	color: var(--secundary-color);
+	font-size: 2rem;
+}
+
+.header__logo__title {
 	color: var(--secundary-color);
 }
 
 .header__menuham {
 	font-size: 1.4rem;
 	position: relative;
-	z-index: 2;
+	z-index: 10;
 	cursor: pointer;
 }
 .header__nav {
@@ -25,12 +37,12 @@
 	box-shadow: 0 0 20px 0 #0009;
 	transition: transform 400ms ease;
 	transform: translateX(0%);
+	z-index: 9;
 }
 
 .header__nav-open {
 	transition: transform 600ms ease;
 	transform: translateX(105%);
-	z-index: 9999999;
 }
 
 .header__list {

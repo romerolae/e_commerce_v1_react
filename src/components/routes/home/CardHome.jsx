@@ -41,8 +41,8 @@ const CardHome = ({ product }) => {
 			<div className="card-product__body">
 				<h3 className="card-product__title">{product.title}</h3>
 				<section className="card-product__price-container">
-					<h4 className="card-product__price-label">price</h4>
-					<span className="card-product__price-number">{product.price}</span>
+					<h4 className="card-product__price-label">Price</h4>
+					<span className="card-product__price-number">${product.price}</span>
 				</section>
 				<button onClick={handleAddCart} className="card-product__btn">
 					<i className="fa-solid fa-cart-plus"></i>

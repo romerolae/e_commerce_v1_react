@@ -16,9 +16,9 @@ const ProductDescription = ({ productInfo }) => {
 				<h2 className="product-info__title">{productInfo?.title}</h2>
 				<p className="product-info__description">{productInfo?.description}</p>
 				<div className="card-product__price-container">
-					<h3 className="card-product__price label ">Price</h3>
-					<p className="card-product__price-number">{productInfo?.price}</p>
-					<h3 className="card__product__info-quantity">Quantity</h3>
+					<h3 className="card-product__price label ">Price:</h3>
+					<p className="card-product__price-number">${productInfo?.price}</p>
+					<h3 className="card__product__info-quantity">Quantity:</h3>
 					<div className="product-info__quantity__container">
 						<div onClick={handleMinus} className="product-info__minus">
 							-

@@ -48,24 +48,29 @@ const Cart = () => {
 	};
 
 	return (
-		<section className="cart">
-			<h2 className="cart__title">cart</h2>
-			{cartProducts?.map((product) => (
-				<CartInfo
-					key={product.id}
-					product={product}
-					getAllProductsCart={getAllProductsCart}
-				/>
-			))}
+		<div className="cart-container">
+			<h2 className="cart__title">Items in your cart</h2>
+			<section className="cart">
+				{cartProducts?.map((product) => (
+					<CartInfo
+						key={product.id}
+						product={product}
+						getAllProductsCart={getAllProductsCart}
+					/>
+				))}
+			</section>
 			<hr className="cart__hr" />
 			<footer className="cart__footer">
-				<span className="cart__total-global-label">Total:</span>
-				<p className="cart__total-global-value">{totalPrice}</p>
-				<button onClick={handleCheckout} className="cart__btn">
-					Checkout
-				</button>
+				<span className="cart__total-sub">Subtotal: ${totalPrice}</span>
+				<span className="cart__shipping">Shipping UPS expedited: $56.50</span>
+				<span className="cart__total-global-label">
+					Order Total: ${totalPrice + 56.5}
+				</span>
 			</footer>
-		</section>
+			<div className="cart__btn">
+				<button onClick={handleCheckout}>Proceed to Checkout</button>
+			</div>
+		</div>
 	);
 };
 

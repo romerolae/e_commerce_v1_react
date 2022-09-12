@@ -5,6 +5,7 @@ import ProductDescription from './ProductDescription';
 import './style/productdetail.css';
 import ProductSlider from './ProductSlider';
 import SimilarProducts from './SimilarProducts';
+import './style/productdetail.css';
 
 const ProductDetail = () => {
 	const [productInfo, setProductInfo] = useState();
@@ -20,7 +21,7 @@ const ProductDetail = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="product-details__container">
 			<ProductSlider productInfo={productInfo} />
 			<ProductDescription productInfo={productInfo} />
 			<SimilarProducts productInfo={productInfo} />

@@ -1,3 +1,17 @@
+.cart-container {
+	padding: var(--padding-mobile);
+}
+.cart__title {
+	padding: 5px;
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+.cart {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
 .cart__item {
 	width: 100%;
 	max-width: 400px;
@@ -15,14 +29,15 @@
 }
 .cart__category {
 	font-size: 13px;
-	font-weight: 300;
+	font-weight: 500;
+	color: rgb(21, 14, 86);
 }
 .cart__name {
 	font-size: 15px;
 	font-weight: 500;
 }
 .cart__trash {
-	color: var(--color-red);
+	color: red;
 	grid-column: end;
 	font-size: 16px;
 	cursor: pointer;
@@ -33,7 +48,97 @@
 	border: 1px solid #ccca;
 	width: max-content;
 }
+
+.cart__total-label {
+	font-size: large;
+	font-weight: bold;
+}
+
+.cart__footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	margin: 15px 0;
+}
+
+.cart__total-global-label {
+	font-size: large;
+	font-weight: bold;
+}
+
+.cart__btn {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	padding: 5px;
+}
+.cart__btn button {
+	background-color: rgb(21, 14, 86);
+	border: none;
+	border-radius: 15px;
+	width: 230px;
+	height: 30px;
+	color: var(--primary-color);
+	font-size: large;
+	cursor: pointer;
+}
 .cart__item-footer {
 	display: flex;
 	justify-content: space-between;
+}
+
+@media screen and (min-width: 720px) {
+	.cart-container {
+		display: flex;
+		flex-direction: column;
+		margin-left: 100px;
+		margin-right: 100px;
+		gap: 30px;
+	}
+
+	.cart__category {
+		font-size: 25px;
+	}
+	.cart__name {
+		font-size: 20px;
+	}
+
+	.cart__title {
+		padding: 20px;
+		font-size: 2.2rem;
+		text-align: left;
+	}
+	.cart {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cart__item {
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.cart__footer {
+		font-size: 1.5rem;
+	}
+	.cart__total-global-label {
+		font-size: 1.5rem;
+	}
+
+	.cart__btn button {
+		width: 400px;
+		height: 40px;
+		font-size: 1.5rem;
+	}
+
+	.cart__trash {
+		color: red;
+		grid-column: end;
+		font-size: 20px;
+		cursor: pointer;
+	}
 }

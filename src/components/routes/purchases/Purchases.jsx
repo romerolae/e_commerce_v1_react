@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import getConfig from '../../../utils/getConfig';
 import PurchaseCard from './PurchaseCard';
-
+import './style/purchase.css';
 const Purchases = () => {
 	const [purchases, setPurchases] = useState();
 
@@ -15,10 +15,13 @@ const Purchases = () => {
 	}, []);
 
 	return (
-		<div className="purchase-container">
-			{purchases?.map((purchase) => (
-				<PurchaseCard key={purchase.id} purchase={purchase} />
-			))}
+		<div>
+			<h2 className="purchase-container__title">Purchases</h2>
+			<div className="purchase-container">
+				{purchases?.map((purchase) => (
+					<PurchaseCard key={purchase.id} purchase={purchase} />
+				))}
+			</div>
 		</div>
 	);
 };

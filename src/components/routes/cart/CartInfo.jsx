@@ -14,7 +14,7 @@ const CartInfo = ({ product, getAllProductsCart }) => {
 	return (
 		<div className="cart__item">
 			<header className="cart__item-header">
-				<h4 className="cart__catergory">{product.brand}</h4>
+				<h4 className="cart__category">{product.brand}</h4>
 				<h3 className="cart__name">{product.title}</h3>
 			</header>
 			<i
@@ -24,7 +24,7 @@ const CartInfo = ({ product, getAllProductsCart }) => {
 			<span className="cart__quantity">{product.productsInCart.quantity}</span>
 			<footer className="cart__item__footer">
 				<span className="cart__total-label">Total:</span>
-				<p className="cart__total-number">{product.price}</p>
+				<p className="cart__total-number">${product.price}</p>
 			</footer>
 		</div>
 	);

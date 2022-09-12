@@ -1,3 +1,7 @@
+.product-details__container {
+	padding: var(--padding-mobile);
+}
+
 .product-slider {
 	/* max-width: 600px;
 	margin: 40px;

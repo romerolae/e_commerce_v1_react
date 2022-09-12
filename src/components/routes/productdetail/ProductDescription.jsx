@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './style/productdetail.css';
 const ProductDescription = ({ productInfo }) => {
 	const [counter, setCounter] = useState(1);
 

@@ -1,9 +1,37 @@
-.App {
-	position: relative;
-}
 .footer {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+.footer-container {
+	padding: var(--padding-mobile);
 	background-color: #007bbf;
-	height: 200px;
-	position: fixed;
-	bottom: 0%;
+	height: 280px;
+	position: static;
+	bottom: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.prior-footer {
+	background-color: #545454;
+	height: 40px;
+	margin-top: 80px;
+}
+
+.footer-container h3 {
+	color: var(--secundary-color);
+}
+
+.footer-container li {
+	color: var(--primary-color);
+}
+
+.footer-allrights {
+	font-size: small;
+	display: flex;
+	justify-content: center;
 }
